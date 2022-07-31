@@ -1,5 +1,13 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i=0; i<array.length; i++){
+    let num2 = (target - array[i])
+    for (let a=i+1; a<array.length; a++){
+      if (array[a] === num2){
+      return true
+    }
+  }
+}
+return false
 }
 
 /* 
@@ -8,6 +16,15 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  given an array of numbers, we want two of them (any two)
+  to add up to target. 
+  for (let j=0; j<array.length, j++){
+    for (let i=0; i<array.length; i++){
+    if ([i] + [j] === target){
+      return true
+    }
+  }
+    
 */
 
 /*
